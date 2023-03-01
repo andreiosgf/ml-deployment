@@ -1,6 +1,6 @@
-FROM jupyter/datascience-notebook:9b06df75e445
+FROM jupyter/datascience-notebook:cde8b4389ade
 
-WORKDIR /home/jovyan/
+WORKDIR /home/andreiosgf/
 
 COPY requirements.txt requirements.txt
 COPY ejemplo.ipynb ejemplo.ipynb

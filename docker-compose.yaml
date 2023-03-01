@@ -18,6 +18,8 @@ services:
     ports:
       - "21:21"        
   postgres:
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
     build: ./postgres-mlflow
     ports:
       - "5432:5432"
